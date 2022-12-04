@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+<bean id="airtel" class="springcoreIOC.Airtel"></bean>
+<bean id="Jio" class="springcoreIOC.jio"></bean>
+
+<bean id="stu" class="springIO1.student">
+<property name="rollNo" value="10"></property>
+<property name="name" value="Amit"></property>
+<property name="certificate">
+<list>
+<value>Graduation certificate</value>
+<value>Java Programming certificate</value>
+<value>Web development Certificate</value>
+</list>
+</property>
+</bean>
+
+<bean id="stu1" class="springIO1.student">
+<property name="rollNo" value="11"></property>
+<property name="name" value="Poovi"></property>
+<property name="certificate">
+<list>
+<value>TNS Foundation Certificate</value>
+<value>C Programming certificate</value>
+<value>Web development Certificate</value>
+</list>
+</property>
+
+
+</bean >
+
+</beans>
